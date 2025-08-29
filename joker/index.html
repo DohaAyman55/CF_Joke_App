@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jokes App</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+      let punchline = "";
+
+    function fetchRandomJoke(callback) {
+      $.ajax({
+        url: '/joker/jokes',   
+        type: 'GET',
+        contentType: 'application/json'
+      })
+      .done(function(data) {
+        callback(data);
+      })
+      .fail(function(jqXHR, textStatus, errorThrown) {
+        $('#error').text('Error fetching joke: ' + jqXHR.status + ' ' + errorThrown);
+      });
+    }
+
+    function displayJoke(data) {
+      $('#setup').text(data.setup);
+      punchline = data.punchline;
+      $('#punchline').text('');
+    }
+
+    function showPunchline() {
+      $('#punchline').text(punchline);
+    }
+
+    $(document).ready(function() {
+      fetchRandomJoke(displayJoke);
+    });
+  </script>
+  <style> .warning{color: red;}</style>
+</head>
+<body>
+    <p class="warning">Dark Humor Warning!</p>
+    <div id="error"></div>
+    <div id="setup"></div>
+    <div id="punchline"></div>
+    <input type="button" value="Show Punchline" onClick="javascript: showPunchline()"></input>
+</body>
+</html>

@@ -1,0 +1,22 @@
+---
+applications:
+- name: joker
+  # random-route: true
+  path: joker
+  memory: 128M
+  buildpacks:
+  - nodejs_buildpack
+
+- name: web
+  random-route: true
+  path: web
+  memory: 128M
+  # env:
+    # destinations: >
+    #   [
+    #     {
+    #       "name":"joker",
+    #       "url":"https://joker-timely-gerenuk-gv.cfapps.ap21.hana.ondemand.com/",
+    #       "forwardAuthToken": true
+    #     }
+    #   ]

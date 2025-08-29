@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "setup": "Why don’t graveyards ever get overcrowded?",
+    "punchline": "Because people are dying to get in."
+  },
+  {
+    "id": 2,
+    "setup": "Why don’t cannibals eat clowns?",
+    "punchline": "Because they taste funny."
+  },
+  {
+    "id": 3,
+    "setup": "Why don’t orphans play baseball?",
+    "punchline": "Because they don’t know where home is."
+  },
+  {
+    "id": 4,
+    "setup": "What's the hardest part about eating a vegetable?",
+    "punchline": "The wheelchair."
+  },
+  {
+    "id": 5,
+    "setup": "Why did the computer show up at work late?",
+    "punchline": "It had a hard drive."
+  },
+  {
+  "setup": "What's the difference between you and cancer?",
+  "punchline": "Your dad didn’t beat cancer."
+  },
+  {
+    "id": 7,
+    "setup": "Why did the coffee file a police report?",
+    "punchline": "It got mugged."
+  },
+  {
+    "id": 8,
+    "setup": "What do you call fake spaghetti?",
+    "punchline": "An impasta!"
+  },
+  {
+    "id": 9,
+    "setup": "Why did the orphan take a selfie?",
+    "punchline": "To see a family photo."
+  },
+  {
+    "id": 10,
+    "setup": "Why did the man put his money in the blender?",
+    "punchline": "Because he wanted to make some liquid assets."
+  }
+]
